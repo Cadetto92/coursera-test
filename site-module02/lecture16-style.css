@@ -1,0 +1,19 @@
+body {
+  background-color: gray;
+  font-size: 130%;
+}
+
+.home:link, .home:visited {
+    text-decoration: none; /* To remove the default underline of a link */
+    background-color: yellow;
+    border: 1px solid blue;
+    color: green;
+    display: block; /* To display an element like a block element */
+    width: 200px;   /* Width of the block */
+    margin-bottom: 1px;
+    text-align: center;
+    }
+.home:hover, .home:active { /* Active = clicked but not yet release */
+    background-color: green;
+    color: yellow;
+  }
