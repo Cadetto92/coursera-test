@@ -1,3 +1,16 @@
+## Useful Link
+### En Vrac
+http://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+https://www.w3schools.com/cssref/css_fonts_fallbacks.asp
+
+### Yaakov Chaikin
+[His Linkedin page](https://www.linkedin.com/in/yaakovchaikin/)
+
+[His Facebbok Page](https://www.facebook.com/CourseraWebDev/)
+
+[His Website](https://clearlydecoded.com/)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Cadetto92/coursera-test/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
