@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Floating Elements</title>
+<link rel="stylesheet" href="lecture18-style.css"> <!-- Added by me -->
+<style>
+
+div {
+  background-color: #00FFFF;
+}
+p.example1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  float: left;
+  margin-right: 10px;
+}
+p.example2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+section {
+  clear: left; /* clear left specified with float before */
+} 
+
+#p1 {
+  background-color: #A52A2A;
+}
+#p2 {
+  background-color: #DEB887;
+}
+#p3 {
+  background-color: #5F9EA0;
+  clear: left;
+}
+#p4 {
+  background-color: #FF7F50;
+}
+
+#p5 {
+  background-color: #A52A2A;
+  float: left;
+  height: 100px; /* or 150px */
+}
+#p6 {
+  background-color: #DEB887;
+  float: right;
+  height: 150px; /* or 100px */
+}
+#p7 {
+  background-color: #5F9EA0;
+  clear: both;  /* clear left and right specified with left and right floats before */
+}
+#p8 {
+  background-color: #FF7F50;
+}
+
+</style>
+</head>
+<body>
+<h1>Floating Elements</h1>
+
+<div>
+  <p id="p1" class="example1"></p>
+  <p id="p2" class="example1"></p>
+  <p id="p3" class="example1"></p>
+  <p id="p4" class="example1"></p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+<div>
+  <p id="p5" class="example2"></p>
+  <p id="p6" class="example2"></p>
+  <p id="p7" class="example2"></p>
+  <p id="p8" class="example2"></p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+<!-- Added by me -->
+<br>
+<br>
+<a ID="home" href="./../index.html">Home</a>
+
+</body>
+</html>

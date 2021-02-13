@@ -4,7 +4,8 @@
     background-color: yellow;
     color: green;
     display: block; /* To display an element like a block element */
-    width: 200px;   /* Width of the block */
+    width: 200px;   /* Width of the block/box */
+    box-sizing: border-box; /* Including border, padding and content */
     border: 1px solid blue;
     margin-bottom: 1px;
     text-align: center;
