@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inheritance in CSS</title>
+<link rel="stylesheet" href="lecture17-external.css"> 
+<style>
+
+header.navigation p {
+  background-color: white;
+  color: blue; /* Score=0012 => Highest score */
+}
+p.blurb {
+  color: red; /* Score=0011 */
+}
+p {
+  color: green !important; /* Score=0001 => Lowest score but will take priority bcz of !important */
+}
+
+</style>
+</head>
+<body>
+<header class="navigation">
+  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta enim aut! Nihil nam obcaecati, fugiat sint sit libero voluptate eos incidunt odio neque cum, dignissimos aperiam, magnam nisi debitis.</p>
+</header>
+
+<!-- Added by me -->
+<br>
+<br>
+<a ID="home" href="./../index.html">Home</a>
+
+</body>
+</html>
