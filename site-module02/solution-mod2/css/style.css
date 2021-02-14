@@ -20,11 +20,13 @@ section {
 }
 h2 {
   width: 200px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   font-size: 125%; /* 25% larger than the font size of the dummy text.*/
   text-align: center;
   float: right;
+  position: relative;
+  top: -1px;   /* As border size is 1px */
+  right: -1px; /* As border size is 1px */
 }
 p {
   clear: right;
@@ -48,8 +50,12 @@ p {
 @media (min-width: 992px) {
   .col-lg-4 {
     float: left;
-    width: calc(33.33% - 40px); /* = 33.33% width in including left and right margins (2*20px) */
+    width: calc(33.33% - 26.67px); /* = 33.33% width in including left and right margins (26.66px = 20px * 4spaces / 3sections) */
     display: table-cell;
+  }
+  #beef {
+    margin-left: 0px; /* Offset to avoid cumulate beef left margin with chicken right margin */
+    margin-right: 0px; /* Offset to avoid cumulate beef right margin with sushi left margin */
   }
 }
 
@@ -57,10 +63,17 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6 {
     float: left;
-    width: calc(50% - 40px); /* = 50% width in including left and right margins (2*20px) */
-    display: table-cell;
+    width: calc(50% - 30px); /* = 50% width in including left and right margins (30px = 20px * 3spaces / 2sections) */
+  }
+  .col-md-12 {
+    float: left;
+    width: calc(100% - 40px); /* = 100% width in including left and right margins (40px = 20px * 2spaces / 1section) */
+  }
+  #beef {
+    margin-left: 0px; /* Offset to avoid cumulate beef left margin with chicken right margin */
   }
   #sushi {
-    width: calc(100% - 40px); /* = 100% width in including left and right margins (2*20px) */
+    margin-top: 0px; /* Offset to avoid cumulate sushi top margin with chichen/beef bottom margin (cumulative here bcz of float) */
   }
+
 }
