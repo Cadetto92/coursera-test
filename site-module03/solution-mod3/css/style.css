@@ -1,0 +1,71 @@
+/*
+#C5D5CB => green light
+#9FA8A3 => green dark
+#E3E0CF => very light brown
+#212529 => light dark or #575C59
+*/
+body {
+  background-color: #C5D5CB;
+}
+.navbar {
+  padding: 0;
+  background-color: #9FA8A3;
+}
+.navbar-brand {
+  font-size: 2rem;
+  text-shadow: 2px 2px 1px #212529;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #FFFFFF;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255,255,255, 0.8);
+  margin-right: 1rem;
+}
+.nav-item{
+  text-align: center;
+  border-bottom: 1px solid #575C59;
+  font-family: 'Tangerine', cursive, serif;
+  font-size: 28px;
+  background-color: #E3E0CF;
+}
+.navbar-nav a:hover, .navbar-nav a:focus {
+  text-shadow: 0px 0px 1px #212529;
+}
+.navbar-nav a:link, .navbar-nav a:visited {
+  color: #575C59;
+}
+
+main {
+  font-family: 'Tangerine', cursive, serif;
+  font-size: 28px;
+}
+h1 {
+  margin: 30px;
+  font-size: 3rem;
+  color: #575C59;
+}
+.food {
+  padding: 20px;
+  margin-bottom: 60px;
+  opacity:0.9;
+  color: #575C59;
+  background-color: #E3E0CF;
+}
+.food h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #212529;
+}
+
+@media (max-width: 576px) {
+  .food {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
